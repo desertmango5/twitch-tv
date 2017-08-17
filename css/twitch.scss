@@ -1,0 +1,135 @@
+html {
+	font: {
+		size: 16px;
+	}
+}
+
+body {
+	color: #333;
+	background-color: khaki;
+	padding-bottom: 10rem;
+}
+
+.header {
+	padding: {
+		bottom: 2rem;
+		top: 3rem;
+	}
+	border: {
+			bottom: 10px solid #6A5ACD;
+		}
+	background-color: rgba(102,51,153,0.9);
+	margin: {
+		bottom: 1.5rem;
+	}
+	h1 {
+		font: {
+			size: 4rem;
+			family: 'Bungee Shade', cursive;
+		}
+		margin: {
+			bottom: 0;
+		}
+		color: #fff;
+	}
+	h2 {
+		font: {
+			size: 2rem;
+			weight: 200;
+		}
+		letter-spacing: 0.1rem;
+	}
+}
+
+#user-info {
+	color: #ddd;
+	font: {
+		size: 1.35rem;
+	}
+	margin: {
+		bottom: 10rem;
+	}
+}
+
+.online {
+	background-color: rgba(0,100,0,0.65);  // dark green
+}
+
+.offline {
+	background-color: rgba(139,0,0,0.65); // dark 
+}
+
+.online, .offline {
+	margin: {
+		top: 1rem;
+	}
+	border-radius: 0.4rem;
+	margin: {
+		left: auto;
+		right: auto;
+	}
+	padding: {
+		top: 0.25rem;
+		bottom: 0.25rem;
+	}
+	width: 75vw;
+}
+
+.logo img {
+	padding-left: 3rem;
+	height: 6rem;
+}
+
+.userName a {
+	color: white;
+	font: {
+		size: 1.75rem;
+	}
+	&:hover {
+		// text-decoration: underline;
+		opacity: 0.8;
+	}
+}
+
+.footer {
+	padding: {
+		top: 1rem;
+		bottom: 1rem;
+	}
+}
+
+
+// increase height of user containers on small screens
+@media (max-width: 1024px) {
+	.online, .offline {
+		width: 90vw;
+	}
+	.logo img {
+		padding: {
+			left: 0;
+			top: 0.5rem;
+			bottom: 1rem;
+		}
+	}
+	.header h1 {
+		font: {
+			size: 3rem;
+		}
+	}
+	.header h2 {
+		font: {
+			size: 1.5rem;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
